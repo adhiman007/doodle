@@ -4,13 +4,111 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
+    <!-- CANVAS -->
     <com.dvictor.doodle.DoodleView
-        android:id="@+id/doodleView1"
+        android:id="@+id/doodleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/bGreen"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" />
+        android:layout_below="@+id/bBrush" />
 
+    <!-- ACTIONS -->
+    <Button
+        android:id="@+id/bNew"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bBrush"
+        android:onClick="onNew"
+        android:text="@string/new_label" />
+
+    <Button
+        android:id="@+id/bBrush"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onBrush"
+        android:text="@string/brush_label" />
+
+    <Button
+        android:id="@+id/bErase"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bBrush"
+        android:onClick="onErase"
+        android:text="@string/erase_label" />
+
+    <!-- COLORS -->
+    <Button
+        android:id="@+id/bRed"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/bGreen"
+        android:layout_alignBottom="@+id/bGreen"
+        android:layout_toLeftOf="@+id/bOrange"
+        android:onClick="onColorChange"
+        android:text="@string/color_red" />
+    <Button
+        android:id="@+id/bOrange"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/bGreen"
+        android:layout_alignBottom="@+id/bGreen"
+        android:layout_toLeftOf="@+id/bYellow"
+        android:onClick="onColorChange"
+        android:text="@string/color_orange" />
+    
+    <Button
+        android:id="@+id/bYellow"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/bGreen"
+        android:layout_alignBottom="@+id/bGreen"
+        android:layout_toLeftOf="@+id/bGreen"
+        android:onClick="onColorChange"
+        android:text="@string/color_yellow" />
+    
+    <Button
+        android:id="@+id/bGreen"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onColorChange"
+        android:text="@string/color_green" />
+
+    <Button
+        android:id="@+id/bBlue"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/bGreen"
+        android:layout_alignBottom="@+id/bGreen"
+        android:layout_toRightOf="@+id/bGreen"
+        android:onClick="onColorChange"
+        android:text="@string/color_blue" />
+
+    <Button
+        android:id="@+id/bBrown"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/bGreen"
+        android:layout_alignBottom="@+id/bGreen"
+        android:layout_toRightOf="@+id/bBlue"
+        android:onClick="onColorChange"
+        android:text="@string/color_brown" />
+
+    <Button
+        android:id="@+id/bBlack"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/bGreen"
+        android:layout_alignBottom="@+id/bGreen"
+        android:layout_toRightOf="@+id/bBrown"
+        android:onClick="onColorChange"
+        android:text="@string/color_black" />
+    
 </RelativeLayout>

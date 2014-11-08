@@ -3,5 +3,19 @@
 
     <string name="app_name">doodle</string>
     <string name="hello_world">Hello world!</string>
-
+    <string name="new_label">New</string>
+    <string name="brush_label">Brush</string>
+    <string name="erase_label">Erase</string>
+    <string name="color_red">R</string>
+    <string name="color_orange">O</string>
+    <string name="color_yellow">Y</string>
+    <string name="color_green">G</string>
+    <string name="color_blue">Bl</string>
+    <string name="color_purple">P</string>
+    <string name="color_brown">Br</string>
+    <string name="color_black">Bk</string>
+    <string name="brush_small">Small</string>
+    <string name="brush_medium">Medium</string>
+    <string name="brush_large">Large</string>
+    
 </resources>
